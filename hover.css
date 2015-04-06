@@ -1,0 +1,431 @@
+
+
+/*Hover effect
+============================*/
+/* Rectangle In */
+.hover-rectangle-in {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background: rgba(32, 152, 209, 0.8);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hover-rectangle-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hover-rectangle-in:hover:before, .hover-rectangle-in:focus:before, .hover-rectangle-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+
+
+/* Rectangle Out */
+.hover-rectangle-out {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hover-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-rectangle-out:hover:before, .hover-rectangle-out:focus:before, .hover-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  
+}
+
+/* Shutter Out Horizontal */
+.hover-shutter-out-horizontal {
+   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hover-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background: rgba(255,255,255,1);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hover-shutter-out-horizontal:hover:before, .hover-shutter-out-horizontal:focus:before, .hover-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  opacity: 0;
+}
+
+/*Fade Effect*/
+
+.hover-fade {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hover-fade:hover, .hover-fade:focus, .hover-fade:active {
+  background-color: rgba(32, 152, 209, 0.8);
+  color: white;
+}
+
+
+
+/* Sweep To Right */
+.hover-sweep-to-right {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hover-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-sweep-to-right:hover:before, .hover-sweep-to-right:focus:before, .hover-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/* Sweep To Left */
+.hover-sweep-to-left {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover-sweep-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-sweep-to-left:hover:before, .hover-sweep-to-left:focus:before, .hover-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Sweep To Bottom */
+.hover-sweep-to-bottom {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-sweep-to-bottom:hover:before, .hover-sweep-to-bottom:focus:before, .hover-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+/* Shutter-out-vertical */
+.hover-shutter-out-vertical {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-shutter-out-vertical:hover:before, .hover-shutter-out-vertical:focus:before, .hover-shutter-out-vertical:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+
+/* Sweep To Bottom */
+.hover-sweep-to-top {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-sweep-to-top:hover:before, .hover-sweep-to-top:focus:before, .hover-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+/* Bounce To Left */
+.hover-bounce-to-left {  
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hover-bounce-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 152, 209, 0.8);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hover-bounce-to-left:hover:before, .hover-bounce-to-left:focus:before, .hover-bounce-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.54, 0.57, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.54, 0.57, 0.66);
+}
+
+/* Bounce To rigth */
+
+.hover-bounce-to-right{
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  position: relative;
+  transition-property: color;
+  -webkit-transition-property: color;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.hover-bounce-to-right:before{
+  content: "";
+  background: rgba(32, 152, 209, 0.8);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  transition-property: transform;
+  -webkit-transition-property: transform;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transtition-timing-function: ease-out;
+  -webkit-transtition-timing-function: ease-out;
+}
+
+.hover-bounce-to-right:hover:before, .hover-bounce-to-right:focus:before,.hover-bounce-to-right:active:before{
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.52, 0.52, 0.52);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.52, 0.52, 0.52);
+}
+
+/* Bounce To Bottom */
+
+.hover-bounce-to-bottom{
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  position: relative;
+  transition-property: color;
+  -webkit-transition-property: color;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.hover-bounce-to-bottom:before{
+  content: "";
+  background: rgba(32, 152, 209, 0.8);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  transition-property: transform;
+  -webkit-transition-property: transform;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transtition-timing-function: ease-out;
+  -webkit-transtition-timing-function: ease-out;
+
+}
+
+.hover-bounce-to-bottom:hover:before, .hover-bounce-to-bottom:focus:before, .hover-bounce-to-bottom:active:before{
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0.52, 1.52, 0.52, 0.52);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.52, 0.52, 0.52);
+}
+
+
+
